@@ -6,7 +6,7 @@ if number < 0:
 else:
     lastd = number % 10
 print('Last digit of', number, 'is', lastd, end=' ')
-if remainder > 5:
+if lastd > 5:
     print('and is greater than 5')
 elif lastd == 0:
     print('and is 0')
