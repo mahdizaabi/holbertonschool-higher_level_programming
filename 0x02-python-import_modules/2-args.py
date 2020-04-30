@@ -11,4 +11,3 @@ if __name__ == "__main__":
         print("1: {}".format(argv[1]))
     if arc == 1:
         print("0 arguments.")
-        
