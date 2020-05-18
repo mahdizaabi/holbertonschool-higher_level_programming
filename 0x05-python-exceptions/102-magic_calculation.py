@@ -8,6 +8,6 @@ def magic_calculation(a, b):
             else:
                 c += (a ** b) / i
         except:
-            c = b + a
+            c = a + b
             break
     return c
