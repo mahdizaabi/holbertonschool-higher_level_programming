@@ -3,6 +3,8 @@
     documentation of the module square
          1 - Square
 """
+
+
 class Square:
     """
     documentation of the class Square
