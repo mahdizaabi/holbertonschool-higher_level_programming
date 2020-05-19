@@ -18,11 +18,6 @@ class Square:
         self.__size = size
 
         def area(self):
-            """function to compute the area
-
-            Argument : size
-
-            return : area of square
-            """
+            """Instance method to calculate the area"""
 
         return self.__size**2
