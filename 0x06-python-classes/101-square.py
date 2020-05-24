@@ -5,16 +5,16 @@
 class Square:
     """Represents a square
     Attributes:
-        __size (int): privat instance of the class square 
+        __size (int): privat instance of the class square
         __position (tuple): privat instance of the class square
     """
     def __init__(self, size=0, position=(0, 0)):
         """initializes the class object attributs
         Args:
             size (int): size of the square
-            position (tuple): position of the shift 
-        Returns:
-            None
+            position (tuple): position of the shift
+            Returns:
+                None
         """
         self.size = size
         self.position = position
@@ -83,7 +83,8 @@ class Square:
         for j in range(self.__size):
             for k in range(self.__size + self.__position[0]):
                 if k < self.__position[0]:
-                    listx.append(' ')
+                    if self.__position[1] == 0:
+                        listx.append(' ')
                 if k >= self.__position[0]:
                     listx.append('#')
             listx.append('\n')
