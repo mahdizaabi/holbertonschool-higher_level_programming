@@ -78,8 +78,8 @@ class Square:
             listx = ''
             return listx
 
-        for i in range(self.__position[1]):
-            listx.append('')
+        #for i in range(self.__position[1]):
+            #listx.append('')
         for j in range(self.__size):
             for k in range(self.__size + self.__position[0]):
                 if k < self.__position[0]:
