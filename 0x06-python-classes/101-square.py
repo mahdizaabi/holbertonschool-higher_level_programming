@@ -83,8 +83,7 @@ class Square:
         for j in range(self.__size):
             for k in range(self.__size + self.__position[0]):
                 if k < self.__position[0]:
-                    if self.__position[1] == 0:
-                        listx.append(' ')
+                    listx.append(" ")
                 if k >= self.__position[0]:
                     listx.append('#')
             listx.append('\n')
