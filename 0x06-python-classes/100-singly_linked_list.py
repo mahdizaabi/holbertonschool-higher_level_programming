@@ -110,7 +110,7 @@ class SinglyLinkedList:
         if self.__head is None:
             self.__head = newnode
 
-        elif self.__head.data > newnode.data:
+        elif self.__head.data >= newnode.data:
             newnode.next_node = self.__head
             self.__head = newnode
             return
