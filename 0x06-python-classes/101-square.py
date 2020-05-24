@@ -75,6 +75,7 @@ class Square:
             None
         """
         if self.__size == 0:
+            listx = ''
             return listx
 
         for i in range(self.__position[1]):
