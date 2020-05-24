@@ -88,9 +88,6 @@ class SinglyLinkedList:
         while pointer:
             listx.append(str(pointer.data))
             pointer = pointer.next_node
-        
-            
-
         return '\n'.join(listx)
 
     def printy(self):
@@ -98,8 +95,6 @@ class SinglyLinkedList:
         while temp:
             print(temp.data)
             temp = temp.next_node
-
-
 
     def sorted_insert(self, value):
 
