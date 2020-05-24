@@ -86,6 +86,7 @@ class Square:
                 if k >= self.__position[0]:
                     listx.append('#')
             listx.append('\n')
+        listx[len(listx)-1] = ''
         return ''.join(listx)
 
     @property
