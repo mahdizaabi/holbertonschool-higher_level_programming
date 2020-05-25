@@ -5,14 +5,15 @@
 class Square:
     """Represents a square
     Attributes:
-        __size (int): privat instance of the class square 
+        __size (int): privat instance of the class square
         __position (tuple): privat instance of the class square
     """
+
     def __init__(self, size=0, position=(0, 0)):
         """initializes the class object attributs
         Args:
             size (int): size of the square
-            position (tuple): position of the shift 
+            position (tuple): position of the shift
         Returns:
             None
         """
