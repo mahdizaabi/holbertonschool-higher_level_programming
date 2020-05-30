@@ -4,7 +4,7 @@ Integer/float addition Module
 '''
 
 
-def add_integer(a, b):
+def add_integer(a, b=98):
     '''
         check type and make operation
     '''
