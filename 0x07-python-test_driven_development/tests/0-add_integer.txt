@@ -1,77 +1,46 @@
 The ``add_integer`` module
-===============================================================================
+====================================
 
 Using ``add_integer``
--------------------------------------------------------------------------------
+------------------------------------
 
 Import add_integer from 0-add_integer
 
     >>> add_integer = __import__('0-add_integer').add_integer
 
-it should do the simple calculation
+Case 1 - simple calculation, sumplied with valid parameters
 
     >>> add_integer(1, 2)
     3
 
-it should accept negative integer
+Case 1.5 - simple calculation, integer and float
 
-    >>> add_integer(100, -2)
-    98
+    >>> add_integer(1, 2.5)
+    3
 
-it should invoke the default variable of b as 98
-
-    >>> add_integer(2)
-    100
-
-it should raise exception when passing an empty args
-
-    >>> add_integer()
+case 2 - parameter a will be suplied a string
+    
+    >>> add_integer("hello", 2)
     Traceback (most recent call last):
-        ...
-    TypeError: add_integer() missing 1 required positional argument: 'a'
+    ...
+    TypeError: a must be an integer
 
-it should return integer when passing float
-
-    >>> add_integer(100.3, 3)
-    103
-
-it should return integer when passing float
-
-    >>> add_integer(3, 33.9)
-    36
-
-it should raise exception when passing not integer for 'b'
-
-    >>> add_integer(4, "school")
+case 3 - parameter b will be suplied a string
+    >>> add_integer(1, "hello")
     Traceback (most recent call last):
-        ...
+    ...
     TypeError: b must be an integer
 
-it should raise exception when passing not integer for 'a'
-
-    >>> add_integer("holberton", 4)
+case 4 - suply None to parameter a
+    
+    >>> add_integer(None, 2)
     Traceback (most recent call last):
-        ...
+    ...
     TypeError: a must be an integer
 
-it should make casting before addition
-
-    >>> add_integer(20.9, 20.9)
-    40
-
-It should not accept boolean value
-
-    >>> add_integer(True, 5)
+case 5 - suply None to parameter b
+    
+    >>> add_integer(1, None)
     Traceback (most recent call last):
-        ...
-    TypeError: a must be an integer
-
-It should accept math operation inside the argument
-
-    >>> add_integer(5+6, 9)
-    20
-
-It should accept nesting call of add_integer
-
-    >>> add_integer(add_integer(5, 6), 9)
-    20
+    ...
+    TypeError: b must be an integer
