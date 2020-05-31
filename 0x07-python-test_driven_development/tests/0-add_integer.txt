@@ -44,3 +44,10 @@ case 5 - suply None to parameter b
     Traceback (most recent call last):
     ...
     TypeError: b must be an integer
+
+case 6 - check with booleans
+
+    >>> add_integer(85, False)
+    Traceback (most recent call last):
+    ...
+    TypeError: b must be an integer
