@@ -59,16 +59,20 @@ case 7 - check booleans
     ...
     TypeError: a must be an integer
 
-case 8 - missing two arguments
+case 8 - check no arguments
+	 >>> add_integer()
+	 Traceback (most recent call last):
+	 ...
+	 TypeError: add_integer() missing 2 required positional arguments: 'a' and 'b'
 
-    >>> add_integer()
-    Traceback (most recent call last):
-    ...
-    TypeError: add_integer() missing 1 required positional argument: 'a'
+case 9 - check one argument
+	 >>> add_integer(1)
+	 Traceback (most recent call last):
+         ...
+	 TypeError: add_integer() missing 1 required positional argument: 'b'
 
-case 9 - missing two arguments
-
-    >>> add_integer()
-    Traceback (most recent call last):
-    ...
-    TypeError: add_integer() missing 1 required positional argument: 'a'
+case 10 - check more on argument
+	 >>> add_integer(1, 2, 3)
+         Traceback (most recent call last):
+         ...
+         TypeError: add_integer() takes 2 positional arguments but 3 were given
