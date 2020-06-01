@@ -1,4 +1,4 @@
-#!/bin/bash/python3
+#!/usr/bin/python3
 """
 This is the "2-matrix_divided" module.
 Module contain only one fuction provided:"Matrix_divided"
