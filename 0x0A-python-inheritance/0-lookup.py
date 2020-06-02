@@ -1,4 +1,4 @@
-#/usr/bin/python3
+#!/usr/bin/python3
 """
 function that return the list of att/mth
 """
