@@ -1,8 +1,7 @@
 #!/usr/bin/python3
 """
-class BaseGeometry
+cclass BaseGeometry
 """
-
 
 class BaseGeometry:
     """A class with public attribute area"""
