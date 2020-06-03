@@ -1,14 +1,13 @@
-#!/usr/bin/pyhton3
+#!/usr/bin/python3
 """
-Nb of lines
+Nb lines 
 """
 
 
 def number_of_lines(filename=""):
-    """nb of lines"""
-
-    g = 0
-    with open(filename, 'r', encoding='utf-8') as filex:
-        for i in filex:
-            g += 1
-        return g
+    """number of lines of a text file"""
+    with open(filename, 'r', encoding='utf8') as fx:
+        count = 0
+        for line in fx:
+            count += 1
+        return count
