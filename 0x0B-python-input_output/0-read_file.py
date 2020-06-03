@@ -3,6 +3,7 @@
 Contains the read_file function
 """
 
+
 def read_file(filename=""):
     """
     Read a etxt file
