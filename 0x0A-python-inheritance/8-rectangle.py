@@ -1,18 +1,17 @@
 #!/usr/bin/python3
-""" Documentation of class Rectangle """
-
+"""
+subclass Rectangle
+"""
 
 BaseGeometry = __import__('7-base_geometry').BaseGeometry
 
 
 class Rectangle(BaseGeometry):
-    """ subclass of BaseGeometry """
-
+    """Sub class"""
     def __init__(self, width, height):
-        """ initiliazation methode """
-        def __init__(self):
-            super().__init__()
-            self.integer_validator("width", width)
-            self.integer_validator("height", height)
-            self.__width = width
-            self.__height = height
+        """instantiation of the rectangle"""
+        super().__init__()
+        self.integer_validator("width", width)
+        self.__width = width
+        self.integer_validator("height", height)
+        self.__height = height
