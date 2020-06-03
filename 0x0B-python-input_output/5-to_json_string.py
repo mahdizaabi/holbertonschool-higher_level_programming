@@ -1,4 +1,4 @@
-#!/usr/bin/usr
+#!/usr/bin/python3
 """
 Json representation
 """
