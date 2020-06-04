@@ -17,9 +17,9 @@ class Student:
         return self.__dict__
 
     def to_json(self, attrs=None):
-
+        """ retrieve the class dictionary representation"""
         new_dic = {}
-        if attrs:
+        if attrs is not None:
             for att in attrs:
                 if att in self.__dict__.keys():
                     new_dic[att] = self.__dict__[att]
