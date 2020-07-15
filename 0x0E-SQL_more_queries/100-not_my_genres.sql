@@ -1,4 +1,5 @@
 -- list all genres not linked to the show Dexter
+-- USING ONLY ONE JOIN :p 
 
 SELECT name 
 FROM tv_genres
