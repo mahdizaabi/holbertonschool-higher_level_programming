@@ -17,6 +17,7 @@ if __name__ == "__main__":
                 .format(statex))
     rows = cur.fetchall()
     for row in rows:
-        print(row)
+        if row[1] == statex:
+            print(row)
     cur.close()
     db.close()
