@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """
-creates the State “California” with the City “San Francisco” 
+creates the State “California” with the City “San Francisco”
 """
 import sqlalchemy
 from sqlalchemy import create_engine
