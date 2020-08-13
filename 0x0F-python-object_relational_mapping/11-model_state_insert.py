@@ -20,6 +20,6 @@ if __name__ == "__main__":
     entity = State(name='Louisiana')
     session.add(entity)
     session.commit()
-    c = session.query(State.id).filter(State.name == 'Louisiana').first()
-    print("{}".format(c))
+    c = session.query(State).filter(State.name == 'Louisiana').first()
+    print(c.id)
     session.close()
