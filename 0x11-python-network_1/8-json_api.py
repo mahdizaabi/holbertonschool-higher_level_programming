@@ -11,14 +11,16 @@ if __name__ == "__main__":
     else:
         r = requests.post(url, data={'q': sys.argv[1]})
 
-    if r.json() and r.headers.get('content-type') == 'application/json':
+    if r.text:
         try:
-            id = r.json().get('id')
-            name = r.json().get('name')
-            print("[{}] {}".format(id, name))
-        except Exception as e:
-            print("No result")
-    elif r.headers.get('content-type') != "application/json":
-        print("Not a valid JSON")
+            json = r.json()
+            id = json.get('id')
+            name = json.get('name')
+            if id and name:
+                print("[{}] {}".format(id, name))
+            else:
+                print("No result")
+        except ValueError:
+            print("Not a valid JSON")
     else:
         print("No result")
