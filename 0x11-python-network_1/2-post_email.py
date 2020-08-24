@@ -9,9 +9,9 @@ if __name__ == "__main__":
     url = sys.argv[1]
     email_adr = sys.argv[2]
 
-    values = {'email': 'email_adr'}
+    values = {'email': email_adr}
     data = urllib.parse.urlencode(values)
     data = data.encode('utf8')
     req = urllib.request.Request(url, data)
-    with urllib.request.urlopen(req) as reponse:
-        print(response.info())
+    with urllib.request.urlopen(req) as response:
+        print(response.read().decode())
