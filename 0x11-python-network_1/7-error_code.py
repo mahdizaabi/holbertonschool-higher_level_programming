@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """
+displays the body of the response.
 """
 import requests
 import sys
