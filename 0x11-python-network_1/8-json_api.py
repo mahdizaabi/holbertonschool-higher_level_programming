@@ -17,7 +17,7 @@ if __name__ == "__main__":
             name = r.json().get('name')
             print("[{}] {}".format(id, name))
         except Exception as e:
-            print("Not a valid JSON")
+            print("No result")
     elif r.headers.get('content-type') != "application/json":
         print("Not a valid JSON")
     else:
