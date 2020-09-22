@@ -5,14 +5,15 @@ let count = 0;
 const ar = [];
 const url = process.argv[2];
 request(url, function (err, response, body) {
-  if (err) { console.error('error:', err); }
-  for (const c of JSON.parse(body).results) {
-    ar.push(c.characters);
-  }
-  for (let i = 0, len = ar.length; i < len; i++) {
-    for (let j = 0, len2 = ar[i].length; j < len2; j++) {
-      if (ar[i][j] === 'https://swapi-api.hbtn.io/api/people/18/') { count++; }
+  if (err) { console.log(err); } else if (response.statusCode === 200) {
+    for (const c of JSON.parse(body).results) {
+      ar.push(c.characters);
     }
+    for (let i = 0, len = ar.length; i < len; i++) {
+      for (let j = 0, len2 = ar[i].length; j < len2; j++) {
+        if (ar[i][j] === 'https://swapi-api.hbtn.io/api/people/18/') { count++; }
+      }
+    }
+    console.log(count);
   }
-  console.log(count);
 });
