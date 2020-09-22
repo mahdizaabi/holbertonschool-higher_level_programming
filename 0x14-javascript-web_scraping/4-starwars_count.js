@@ -1,11 +1,11 @@
 #!/usr/bin/node
 
 const request = require('request');
-let count = 0;
 const ar = [];
 const url = process.argv[2];
 request(url, function (err, response, body) {
   if (err) { console.log(err); } else if (response.statusCode === 200) {
+    let count = 0;
     for (const c of JSON.parse(body).results) {
       ar.push(c.characters);
     }
