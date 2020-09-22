@@ -3,7 +3,7 @@
 const request = require('request');
 let count = 0;
 const ar = [];
-const url = 'https://swapi-api.hbtn.io/api/films/';
+const url = process.argv[2];
 request(url, function (err, response, body) {
   if (err) { console.error('error:', err); }
   for (const i of JSON.parse(body).results) {
