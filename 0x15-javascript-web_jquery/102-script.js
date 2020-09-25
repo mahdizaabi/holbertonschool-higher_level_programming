@@ -1,8 +1,8 @@
 $(document).ready(function () {
-  $('#btn_translate').click(function () {
+  $('INPUT#btn_translate').click(function () {
     $.get(('https://fourtonfish.com/hellosalut/?lang=' +
          $('#language_code').val()), function (data) {
-      $('#hello').text(data.hello);
+      $('DIV#hello').html(data.hello);
     });
   });
 });
